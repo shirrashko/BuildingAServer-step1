@@ -2,11 +2,13 @@ package main
 
 import (
 	"buildingAServer/pkg/api"
+	"fmt"
 	"github.com/gin-gonic/gin" // need to run go get github.com/gin-gonic/gin in addition for it to be recognized
 )
 
 func main() {
-	//create a new Gin server and start it
+	//create a new Gin server and start it\
+	fmt.Println("start of the program")
 	router := gin.Default()
 	api.AnswerRequests(router)
 
